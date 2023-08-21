@@ -104,6 +104,9 @@ main{
     border: 1px solid white;
     padding: 10px;
 }
+.colum p{
+    width: 90%;
+}
 .sec2{
     width: 75%;
     height: 300px;
@@ -157,26 +160,38 @@ fieldset, .fieldset1, .fieldset2{
     }
     nav, .nav-a{
         width: 100%;
-        height: 100px;
+        height: 120px;
     }
-    .nav-a, .header-a{
-        position: relative;
-        left: 0px;
+    .nav-a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      
 
     }
+    .header-a , .nav-a{
+        position: relative;
+        left: 0px;
+    }
     .div1-1 ,.div1-2{
-        width: 100%;
+        width: 90%;
         
     }
-    .div2-1, .div1-2{
-        width: 80%;
-        height: 100px;
-    }
+    
     .div2-2{
         width: 10%;
         height: 100px;
+        position: relative;
+        bottom: 60px;
     }
-    .div2-2, .div1-1, .div2-1, .div1-2{
+    .div2-1{
+        width: 80%;
+        margin: 0 auto;
+       position: relative;
+       top: 50px;
+    }
+    .div1-1, .div1-2, .div2-1, .div2-2{
         
         display: flex;
         flex-direction: row;
@@ -208,7 +223,7 @@ fieldset, .fieldset1, .fieldset2{
     }
    
 }
-@media screen and (min-width:601px) and (max-width:992px){
+/* @media screen and (min-width:601px) and (max-width:992px){
     .orange{
         display: none;
     }
@@ -223,14 +238,26 @@ fieldset, .fieldset1, .fieldset2{
         justify-content:center ;
 
     }
-    .nav-a, nav{
-        width: 75%;
-        height: 100px;
-        position: relative;
-        left: 0px;
-        margin: 0 auto;
-        margin-top: 50px;
-
+    nav{
+        width: 100%;
+        height: 150px;
+    }
+    .nav-a{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+}
+    .div2-1{
+        width: 90%;
+        
+    }
+    .div2-2{
+        width: 15%;
+       
+        
     }
     .colum{
         width: 90%;
@@ -245,10 +272,8 @@ fieldset, .fieldset1, .fieldset2{
         position: relative;
         left: 20%;
     }
-    .div2-1{
-        width: 80%;
-    }
-    .div2-2{
-        width: 20%;
-    }
-}
+   .colum p{
+    width: 90%;
+    
+   }
+} */
